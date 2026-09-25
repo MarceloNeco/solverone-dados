@@ -1,0 +1,177 @@
+{
+  "formato": 1,
+  "geradoEm": "2026-09-25T07:12:42.835Z",
+  "geradoPor": "RootifyONE 0.1.0",
+  "apps": [
+    {
+      "id": "portal",
+      "nome": {
+        "pt": "Portal de Projetos",
+        "en": "Projects Portal"
+      },
+      "url": "https://marceloneco.github.io/",
+      "estado": "beta",
+      "versaoMinima": "",
+      "cor": "#60a5fa",
+      "glifo": "🧭",
+      "descricao": {
+        "pt": "Página central com os links dos apps",
+        "en": "Central page linking every app"
+      },
+      "interno": false
+    },
+    {
+      "id": "rootify-one",
+      "nome": {
+        "pt": "RootifyONE",
+        "en": "RootifyONE"
+      },
+      "url": "https://marceloneco.github.io/rootify-one/",
+      "estado": "alpha",
+      "versaoMinima": "",
+      "cor": "#f87171",
+      "glifo": "🌳",
+      "descricao": {
+        "pt": "Administração central da SolverONE",
+        "en": "SolverONE central administration"
+      },
+      "interno": true
+    },
+    {
+      "id": "feature-tester",
+      "nome": {
+        "pt": "Feature Tester",
+        "en": "Feature Tester"
+      },
+      "url": "https://marceloneco.github.io/FeatureTesting/",
+      "estado": "beta",
+      "versaoMinima": "",
+      "cor": "#fbbf24",
+      "glifo": "🧪",
+      "descricao": {
+        "pt": "Testador de funcionalidades",
+        "en": "Feature testing bench"
+      },
+      "interno": true
+    },
+    {
+      "id": "omnilife-one",
+      "nome": {
+        "pt": "OmniLifeONE",
+        "en": "OmniLifeONE"
+      },
+      "url": "https://marceloneco.github.io/omnilife-one/",
+      "estado": "beta",
+      "versaoMinima": "",
+      "cor": "#e4a460",
+      "glifo": "🧩",
+      "descricao": {
+        "pt": "Assistente da família e da casa",
+        "en": "Family and home assistant"
+      },
+      "interno": false
+    },
+    {
+      "id": "moneytrio",
+      "nome": {
+        "pt": "MoneyTRIO",
+        "en": "MoneyTRIO"
+      },
+      "url": "https://marceloneco.github.io/investify-me/",
+      "estado": "beta",
+      "versaoMinima": "",
+      "cor": "#d6a076",
+      "glifo": "💰",
+      "descricao": {
+        "pt": "BudgetONE, InvestifyONE e TaxONE",
+        "en": "BudgetONE, InvestifyONE and TaxONE"
+      },
+      "interno": false
+    },
+    {
+      "id": "rise-one",
+      "nome": {
+        "pt": "RiseONE",
+        "en": "RiseONE"
+      },
+      "url": "https://marceloneco.github.io/rise-one/",
+      "estado": "beta",
+      "versaoMinima": "",
+      "cor": "#beb0ec",
+      "glifo": "🏃",
+      "descricao": {
+        "pt": "Exercício, dieta e saúde",
+        "en": "Exercise, diet and health"
+      },
+      "interno": false
+    },
+    {
+      "id": "eleicoes-2026",
+      "nome": {
+        "pt": "Eleições 2026",
+        "en": "2026 Elections"
+      },
+      "url": "https://marceloneco.github.io/planos-candidatos-2026/",
+      "estado": "beta",
+      "versaoMinima": "",
+      "cor": "#a4c4a6",
+      "glifo": "🗳️",
+      "descricao": {
+        "pt": "Infográficos dos planos de governo",
+        "en": "Government plan infographics"
+      },
+      "interno": false
+    },
+    {
+      "id": "contador-de-historias",
+      "nome": {
+        "pt": "Contador de Histórias",
+        "en": "Storyteller"
+      },
+      "url": "https://marceloneco.github.io/contador-de-historias/",
+      "estado": "beta",
+      "versaoMinima": "",
+      "cor": "#96c0e8",
+      "glifo": "📖",
+      "descricao": {
+        "pt": "Acervo, leitura e criação de histórias",
+        "en": "Story library, reading and creation"
+      },
+      "interno": false
+    },
+    {
+      "id": "cifras-violao",
+      "nome": {
+        "pt": "CifrasONE",
+        "en": "CifrasONE"
+      },
+      "url": "https://marceloneco.github.io/cifras-violao/",
+      "estado": "beta",
+      "versaoMinima": "",
+      "cor": "#eaa4b8",
+      "glifo": "🎸",
+      "descricao": {
+        "pt": "Cifras, acordes e afinador",
+        "en": "Chords, chord charts and tuner"
+      },
+      "interno": false
+    },
+    {
+      "id": "petlover",
+      "nome": {
+        "pt": "PetLover",
+        "en": "PetLover"
+      },
+      "url": "",
+      "estado": "backlog",
+      "versaoMinima": "",
+      "cor": "#86efac",
+      "glifo": "🐾",
+      "descricao": {
+        "pt": "A definir",
+        "en": "To be defined"
+      },
+      "interno": false
+    }
+  ]
+}

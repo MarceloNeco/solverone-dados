@@ -1,0 +1,92 @@
+{
+  "formato": 1,
+  "geradoEm": "2026-09-25T07:12:42.835Z",
+  "geradoPor": "RootifyONE 0.1.0",
+  "planos": [
+    {
+      "id": "visitante",
+      "nome": {
+        "pt": "Visitante",
+        "en": "Visitor"
+      },
+      "descricao": {
+        "pt": "Sem conta, sem dado guardado, com anúncios.",
+        "en": "No account, no data kept, with ads."
+      },
+      "ordem": 1,
+      "ativo": true,
+      "semAnuncios": false,
+      "exigeConta": false,
+      "cotaMB": 0,
+      "membrosMax": 1
+    },
+    {
+      "id": "membro",
+      "nome": {
+        "pt": "Membro",
+        "en": "Member"
+      },
+      "descricao": {
+        "pt": "Conta gratuita, com anúncios.",
+        "en": "Free account, with ads."
+      },
+      "ordem": 2,
+      "ativo": true,
+      "semAnuncios": false,
+      "exigeConta": true,
+      "cotaMB": 50,
+      "membrosMax": 1
+    },
+    {
+      "id": "premium",
+      "nome": {
+        "pt": "Premium",
+        "en": "Premium"
+      },
+      "descricao": {
+        "pt": "Sem anúncios e com os serviços Premium.",
+        "en": "Ad-free with Premium services."
+      },
+      "ordem": 3,
+      "ativo": true,
+      "semAnuncios": true,
+      "exigeConta": true,
+      "cotaMB": 500,
+      "membrosMax": 1
+    },
+    {
+      "id": "familia",
+      "nome": {
+        "pt": "Família",
+        "en": "Family"
+      },
+      "descricao": {
+        "pt": "Uma assinatura para a casa toda.",
+        "en": "One subscription for the whole household."
+      },
+      "ordem": 4,
+      "ativo": false,
+      "semAnuncios": true,
+      "exigeConta": true,
+      "cotaMB": 2000,
+      "membrosMax": 6
+    },
+    {
+      "id": "profissional",
+      "nome": {
+        "pt": "Profissional",
+        "en": "Professional"
+      },
+      "descricao": {
+        "pt": "Para quem acompanha clientes (RiseONE).",
+        "en": "For those who follow clients (RiseONE)."
+      },
+      "ordem": 5,
+      "ativo": false,
+      "semAnuncios": true,
+      "exigeConta": true,
+      "cotaMB": 2000,
+      "membrosMax": 1
+    }
+  ]
+}

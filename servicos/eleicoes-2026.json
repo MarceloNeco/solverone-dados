@@ -1,0 +1,68 @@
+{
+  "formato": 1,
+  "geradoEm": "2026-09-25T07:12:42.835Z",
+  "geradoPor": "RootifyONE 0.1.0",
+  "app": "eleicoes-2026",
+  "servicos": [
+    {
+      "id": "ia",
+      "nome": {
+        "pt": "Perguntar à IA",
+        "en": "Ask the AI"
+      },
+      "descricao": null,
+      "planos": [
+        "*"
+      ],
+      "nivel": "visitante"
+    },
+    {
+      "id": "ocr",
+      "nome": {
+        "pt": "Ler texto de foto (OCR)",
+        "en": "Read text from photo (OCR)"
+      },
+      "descricao": null,
+      "planos": [
+        "*"
+      ],
+      "nivel": "visitante"
+    },
+    {
+      "id": "nuvem",
+      "nome": {
+        "pt": "Cópia no Google Drive / OneDrive",
+        "en": "Copy to Google Drive / OneDrive"
+      },
+      "descricao": null,
+      "planos": [
+        "*"
+      ],
+      "nivel": "visitante"
+    },
+    {
+      "id": "voz",
+      "nome": {
+        "pt": "Leitura em voz alta",
+        "en": "Read aloud"
+      },
+      "descricao": null,
+      "planos": [
+        "*"
+      ],
+      "nivel": "visitante"
+    },
+    {
+      "id": "notificacoes",
+      "nome": {
+        "pt": "Avisos e lembretes",
+        "en": "Alerts and reminders"
+      },
+      "descricao": null,
+      "planos": [
+        "*"
+      ],
+      "nivel": "visitante"
+    }
+  ]
+}

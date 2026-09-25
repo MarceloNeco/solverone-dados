@@ -1,0 +1,17 @@
+{
+  "app": "rootify-one",
+  "versoes": [
+    {
+      "versao": "0.1.0",
+      "data": "2026-09-25",
+      "itens": {
+        "pt": [
+          "Primeira versão do RootifyONE: CRM, suporte, papéis, termos, publicação e log."
+        ],
+        "en": [
+          "First RootifyONE release: CRM, support, roles, terms, publishing and log."
+        ]
+      }
+    }
+  ]
+}
