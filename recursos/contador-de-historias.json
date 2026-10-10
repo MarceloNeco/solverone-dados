@@ -1,0 +1,17 @@
+{
+  "formato": 1,
+  "geradoEm": "2026-10-10T01:38:26.274Z",
+  "geradoPor": "RootifyONE 0.11.0",
+  "app": "contador-de-historias",
+  "recursos": {
+    "criar-com-ia": {
+      "ligado": true,
+      "desde": "",
+      "nome": {
+        "pt": "Criar história com IA",
+        "en": "Create a story with AI"
+      }
+    }
+  },
+  "comportamentos": {}
+}
