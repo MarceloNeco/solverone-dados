@@ -1,8 +1,50 @@
 {
-  "formato": 1,
-  "geradoEm": "2026-09-25T12:58:16.827Z",
-  "geradoPor": "RootifyONE 0.1.2",
+  "formato": 2,
+  "geradoEm": "2026-10-10T01:38:26.274Z",
+  "geradoPor": "RootifyONE 0.11.0",
   "app": "rise-one",
+  "planos": [
+    {
+      "id": "visitante",
+      "nome": {
+        "pt": "Visitante",
+        "en": "Visitor"
+      },
+      "ordem": 1
+    },
+    {
+      "id": "membro",
+      "nome": {
+        "pt": "Membro",
+        "en": "Member"
+      },
+      "ordem": 2
+    },
+    {
+      "id": "premium",
+      "nome": {
+        "pt": "Premium",
+        "en": "Premium"
+      },
+      "ordem": 3
+    },
+    {
+      "id": "familia",
+      "nome": {
+        "pt": "Família",
+        "en": "Family"
+      },
+      "ordem": 4
+    },
+    {
+      "id": "profissional",
+      "nome": {
+        "pt": "Profissional",
+        "en": "Professional"
+      },
+      "ordem": 5
+    }
+  ],
   "servicos": [
     {
       "id": "ia",
@@ -14,7 +56,10 @@
       "planos": [
         "*"
       ],
-      "nivel": "visitante"
+      "nivel": "visitante",
+      "visivel": "bloqueado",
+      "degustacao": null,
+      "mensagem": null
     },
     {
       "id": "ocr",
@@ -26,7 +71,10 @@
       "planos": [
         "*"
       ],
-      "nivel": "visitante"
+      "nivel": "visitante",
+      "visivel": "bloqueado",
+      "degustacao": null,
+      "mensagem": null
     },
     {
       "id": "nuvem",
@@ -38,7 +86,10 @@
       "planos": [
         "*"
       ],
-      "nivel": "visitante"
+      "nivel": "visitante",
+      "visivel": "bloqueado",
+      "degustacao": null,
+      "mensagem": null
     },
     {
       "id": "voz",
@@ -50,7 +101,10 @@
       "planos": [
         "*"
       ],
-      "nivel": "visitante"
+      "nivel": "visitante",
+      "visivel": "bloqueado",
+      "degustacao": null,
+      "mensagem": null
     },
     {
       "id": "notificacoes",
@@ -62,7 +116,10 @@
       "planos": [
         "*"
       ],
-      "nivel": "visitante"
+      "nivel": "visitante",
+      "visivel": "bloqueado",
+      "degustacao": null,
+      "mensagem": null
     },
     {
       "id": "treino",
@@ -74,7 +131,10 @@
       "planos": [
         "*"
       ],
-      "nivel": "visitante"
+      "nivel": "visitante",
+      "visivel": "bloqueado",
+      "degustacao": null,
+      "mensagem": null
     },
     {
       "id": "rotulos",
@@ -86,7 +146,10 @@
       "planos": [
         "*"
       ],
-      "nivel": "visitante"
+      "nivel": "visitante",
+      "visivel": "bloqueado",
+      "degustacao": null,
+      "mensagem": null
     },
     {
       "id": "exames",
@@ -98,7 +161,91 @@
       "planos": [
         "*"
       ],
-      "nivel": "visitante"
+      "nivel": "visitante",
+      "visivel": "bloqueado",
+      "degustacao": null,
+      "mensagem": null
+    },
+    {
+      "id": "guia-exercicios",
+      "nome": {
+        "pt": "Guia de exercícios (fotos e vídeos)",
+        "en": "Exercise guide (photos and videos)"
+      },
+      "descricao": null,
+      "planos": [
+        "premium",
+        "familia",
+        "profissional"
+      ],
+      "nivel": "premium",
+      "visivel": "bloqueado",
+      "degustacao": {
+        "planos": [
+          "visitante",
+          "membro"
+        ],
+        "tipo": "itens",
+        "limite": 2,
+        "periodo": "sempre",
+        "itens": []
+      },
+      "mensagem": null
+    },
+    {
+      "id": "series-prontas",
+      "nome": {
+        "pt": "Séries prontas",
+        "en": "Ready-made workouts"
+      },
+      "descricao": null,
+      "planos": [
+        "membro",
+        "premium",
+        "familia",
+        "profissional"
+      ],
+      "nivel": "pagante",
+      "visivel": "bloqueado",
+      "degustacao": {
+        "planos": [
+          "visitante"
+        ],
+        "tipo": "itens",
+        "limite": 1,
+        "periodo": "sempre",
+        "itens": []
+      },
+      "mensagem": null
+    },
+    {
+      "id": "series-personalizar",
+      "nome": {
+        "pt": "Treino personalizado salvo",
+        "en": "Saved custom workout"
+      },
+      "descricao": null,
+      "planos": [
+        "premium",
+        "familia",
+        "profissional"
+      ],
+      "nivel": "premium",
+      "visivel": "bloqueado",
+      "degustacao": {
+        "planos": [
+          "visitante",
+          "membro"
+        ],
+        "tipo": "quantidade",
+        "limite": 1,
+        "periodo": "sempre",
+        "itens": []
+      },
+      "mensagem": {
+        "pt": "Sem plano pago, você pode ter 1 treino personalizado salvo. Apague o atual para criar outro, ou mude de plano para salvar quantos quiser.",
+        "en": "Without a paid plan you can keep 1 saved custom workout. Delete the current one to create another, or change plans to save as many as you like."
+      }
     }
   ]
 }
