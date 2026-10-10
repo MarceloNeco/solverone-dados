@@ -1,0 +1,252 @@
+{
+  "formato": 2,
+  "geradoEm": "2026-10-10T01:38:26.274Z",
+  "geradoPor": "RootifyONE 0.11.0",
+  "app": "solverone-app",
+  "planos": [
+    {
+      "id": "visitante",
+      "nome": {
+        "pt": "Visitante",
+        "en": "Visitor"
+      },
+      "ordem": 1
+    },
+    {
+      "id": "membro",
+      "nome": {
+        "pt": "Membro",
+        "en": "Member"
+      },
+      "ordem": 2
+    },
+    {
+      "id": "premium",
+      "nome": {
+        "pt": "Premium",
+        "en": "Premium"
+      },
+      "ordem": 3
+    },
+    {
+      "id": "familia",
+      "nome": {
+        "pt": "Família",
+        "en": "Family"
+      },
+      "ordem": 4
+    },
+    {
+      "id": "profissional",
+      "nome": {
+        "pt": "Profissional",
+        "en": "Professional"
+      },
+      "ordem": 5
+    }
+  ],
+  "servicos": [
+    {
+      "id": "ia",
+      "nome": {
+        "pt": "Perguntar à IA",
+        "en": "Ask the AI"
+      },
+      "descricao": null,
+      "planos": [
+        "*"
+      ],
+      "nivel": "visitante",
+      "visivel": "bloqueado",
+      "degustacao": null,
+      "mensagem": null
+    },
+    {
+      "id": "ocr",
+      "nome": {
+        "pt": "Ler texto de foto (OCR)",
+        "en": "Read text from photo (OCR)"
+      },
+      "descricao": null,
+      "planos": [
+        "*"
+      ],
+      "nivel": "visitante",
+      "visivel": "bloqueado",
+      "degustacao": null,
+      "mensagem": null
+    },
+    {
+      "id": "nuvem",
+      "nome": {
+        "pt": "Cópia no Google Drive / OneDrive",
+        "en": "Copy to Google Drive / OneDrive"
+      },
+      "descricao": null,
+      "planos": [
+        "*"
+      ],
+      "nivel": "visitante",
+      "visivel": "bloqueado",
+      "degustacao": null,
+      "mensagem": null
+    },
+    {
+      "id": "voz",
+      "nome": {
+        "pt": "Leitura em voz alta",
+        "en": "Read aloud"
+      },
+      "descricao": null,
+      "planos": [
+        "*"
+      ],
+      "nivel": "visitante",
+      "visivel": "bloqueado",
+      "degustacao": null,
+      "mensagem": null
+    },
+    {
+      "id": "notificacoes",
+      "nome": {
+        "pt": "Avisos e lembretes",
+        "en": "Alerts and reminders"
+      },
+      "descricao": null,
+      "planos": [
+        "*"
+      ],
+      "nivel": "visitante",
+      "visivel": "bloqueado",
+      "degustacao": null,
+      "mensagem": null
+    },
+    {
+      "id": "guia-exercicios",
+      "nome": {
+        "pt": "Guia de exercícios (fotos e vídeos)",
+        "en": "Exercise guide (photos and videos)"
+      },
+      "descricao": null,
+      "planos": [
+        "premium",
+        "familia",
+        "profissional"
+      ],
+      "nivel": "premium",
+      "visivel": "bloqueado",
+      "degustacao": {
+        "planos": [
+          "visitante",
+          "membro"
+        ],
+        "tipo": "itens",
+        "limite": 2,
+        "periodo": "sempre",
+        "itens": []
+      },
+      "mensagem": null
+    },
+    {
+      "id": "series-prontas",
+      "nome": {
+        "pt": "Séries prontas",
+        "en": "Ready-made workouts"
+      },
+      "descricao": null,
+      "planos": [
+        "membro",
+        "premium",
+        "familia",
+        "profissional"
+      ],
+      "nivel": "pagante",
+      "visivel": "bloqueado",
+      "degustacao": {
+        "planos": [
+          "visitante"
+        ],
+        "tipo": "itens",
+        "limite": 1,
+        "periodo": "sempre",
+        "itens": []
+      },
+      "mensagem": null
+    },
+    {
+      "id": "series-personalizar",
+      "nome": {
+        "pt": "Treino personalizado salvo",
+        "en": "Saved custom workout"
+      },
+      "descricao": null,
+      "planos": [
+        "premium",
+        "familia",
+        "profissional"
+      ],
+      "nivel": "premium",
+      "visivel": "bloqueado",
+      "degustacao": {
+        "planos": [
+          "visitante",
+          "membro"
+        ],
+        "tipo": "quantidade",
+        "limite": 1,
+        "periodo": "sempre",
+        "itens": []
+      },
+      "mensagem": {
+        "pt": "Sem plano pago, você pode ter 1 treino personalizado salvo. Apague o atual para criar outro, ou mude de plano para salvar quantos quiser.",
+        "en": "Without a paid plan you can keep 1 saved custom workout. Delete the current one to create another, or change plans to save as many as you like."
+      }
+    },
+    {
+      "id": "criar-historia",
+      "nome": {
+        "pt": "Criar história com IA",
+        "en": "Create a story with AI"
+      },
+      "descricao": null,
+      "planos": [
+        "membro",
+        "premium",
+        "familia",
+        "profissional"
+      ],
+      "nivel": "pagante",
+      "visivel": "bloqueado",
+      "degustacao": {
+        "planos": [
+          "visitante"
+        ],
+        "tipo": "usos",
+        "limite": 2,
+        "periodo": "semana",
+        "itens": []
+      },
+      "mensagem": {
+        "pt": "Como visitante, você pode criar 2 histórias por semana. O limite volta no domingo, à 0h (não acumula). Crie uma conta grátis para criar mais.",
+        "en": "As a visitor you can create 2 stories per week. The limit resets on Sunday at midnight (no carry-over). Create a free account to create more."
+      }
+    },
+    {
+      "id": "exportar-pdf",
+      "nome": {
+        "pt": "Exportar treino em PDF",
+        "en": "Export workout as PDF"
+      },
+      "descricao": null,
+      "planos": [
+        "premium",
+        "familia",
+        "profissional"
+      ],
+      "nivel": "premium",
+      "visivel": "bloqueado",
+      "degustacao": null,
+      "mensagem": null
+    }
+  ]
+}
