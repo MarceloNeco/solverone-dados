@@ -1,7 +1,7 @@
 {
   "formato": 1,
-  "geradoEm": "2026-09-25T12:58:16.827Z",
-  "geradoPor": "RootifyONE 0.1.2",
+  "geradoEm": "2026-10-10T01:38:26.274Z",
+  "geradoPor": "RootifyONE 0.11.0",
   "apps": [
     {
       "id": "portal",
@@ -9,7 +9,7 @@
         "pt": "Portal de Projetos",
         "en": "Projects Portal"
       },
-      "url": "https://marceloneco.github.io/",
+      "url": "https://solverone.com.br/",
       "estado": "beta",
       "versaoMinima": "",
       "cor": "#60a5fa",
@@ -26,7 +26,7 @@
         "pt": "RootifyONE",
         "en": "RootifyONE"
       },
-      "url": "https://rootify-one.pages.dev/",
+      "url": "https://solverone.com.br/rootify-one/",
       "estado": "alpha",
       "versaoMinima": "",
       "cor": "#f87171",
@@ -43,7 +43,7 @@
         "pt": "Feature Tester",
         "en": "Feature Tester"
       },
-      "url": "https://marceloneco.github.io/FeatureTesting/",
+      "url": "https://solverone.com.br/FeatureTesting/",
       "estado": "beta",
       "versaoMinima": "",
       "cor": "#fbbf24",
@@ -60,7 +60,7 @@
         "pt": "OmniLifeONE",
         "en": "OmniLifeONE"
       },
-      "url": "https://marceloneco.github.io/omnilife-one/",
+      "url": "https://solverone.com.br/omnilife-one/",
       "estado": "beta",
       "versaoMinima": "",
       "cor": "#e4a460",
@@ -77,7 +77,7 @@
         "pt": "MoneyTRIO",
         "en": "MoneyTRIO"
       },
-      "url": "https://marceloneco.github.io/investify-me/",
+      "url": "https://solverone.com.br/investify-me/",
       "estado": "beta",
       "versaoMinima": "",
       "cor": "#d6a076",
@@ -94,7 +94,7 @@
         "pt": "RiseONE",
         "en": "RiseONE"
       },
-      "url": "https://marceloneco.github.io/rise-one/",
+      "url": "https://solverone.com.br/rise-one/",
       "estado": "beta",
       "versaoMinima": "",
       "cor": "#beb0ec",
@@ -111,7 +111,7 @@
         "pt": "Eleições 2026",
         "en": "2026 Elections"
       },
-      "url": "https://marceloneco.github.io/planos-candidatos-2026/",
+      "url": "https://solverone.com.br/planos-candidatos-2026/",
       "estado": "beta",
       "versaoMinima": "",
       "cor": "#a4c4a6",
@@ -128,7 +128,7 @@
         "pt": "UM Contador de Histórias",
         "en": "ONE Storyteller"
       },
-      "url": "https://marceloneco.github.io/contador-de-historias/",
+      "url": "https://solverone.com.br/contador-de-historias/",
       "estado": "beta",
       "versaoMinima": "",
       "cor": "#96c0e8",
@@ -145,7 +145,7 @@
         "pt": "CifrasONE",
         "en": "CifrasONE"
       },
-      "url": "https://marceloneco.github.io/cifras-violao/",
+      "url": "https://solverone.com.br/cifras-violao/",
       "estado": "beta",
       "versaoMinima": "",
       "cor": "#eaa4b8",
@@ -170,6 +170,57 @@
       "descricao": {
         "pt": "A definir",
         "en": "To be defined"
+      },
+      "interno": false
+    },
+    {
+      "id": "solverone-app",
+      "nome": {
+        "pt": "SolverONE Lab",
+        "en": "SolverONE Lab"
+      },
+      "url": "",
+      "estado": "alpha",
+      "versaoMinima": "",
+      "cor": "#2dd4bf",
+      "glifo": "🧪",
+      "descricao": {
+        "pt": "Piloto de conta e login (Supabase)",
+        "en": "Account and sign-in pilot (Supabase)"
+      },
+      "interno": true
+    },
+    {
+      "id": "play-one",
+      "nome": {
+        "pt": "PlayONE — Bolinho de Chuva",
+        "en": "PlayONE — Rainy Day Fun"
+      },
+      "url": "",
+      "estado": "backlog",
+      "versaoMinima": "",
+      "cor": "#fcd34d",
+      "glifo": "☔",
+      "descricao": {
+        "pt": "Diversão em casa com a criançada: brincadeiras com utensílios da casa, desenho traço a traço, mágicas caseiras. Conteúdo configurável no RootifyONE.",
+        "en": "Fun at home with the kids: games with household items, step-by-step drawing, home-made magic tricks. Content managed in RootifyONE."
+      },
+      "interno": false
+    },
+    {
+      "id": "sabi-one",
+      "nome": {
+        "pt": "SabiONE — Escola em Casa",
+        "en": "SabiONE — Home School"
+      },
+      "url": "",
+      "estado": "backlog",
+      "versaoMinima": "",
+      "cor": "#93c5fd",
+      "glifo": "🐦",
+      "descricao": {
+        "pt": "Homeschooling complementar: alfabetização (inspirada no GraphoGame), matemática, inglês, música, história… por idade e dificuldade, com login da criança controlado pelo responsável.",
+        "en": "Complementary homeschooling: literacy (inspired by GraphoGame), maths, English, music, history… by age and difficulty, with a child login controlled by the guardian."
       },
       "interno": false
     }
