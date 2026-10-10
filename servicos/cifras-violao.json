@@ -1,8 +1,50 @@
 {
-  "formato": 1,
-  "geradoEm": "2026-09-25T12:58:16.827Z",
-  "geradoPor": "RootifyONE 0.1.2",
+  "formato": 2,
+  "geradoEm": "2026-10-10T01:38:26.274Z",
+  "geradoPor": "RootifyONE 0.11.0",
   "app": "cifras-violao",
+  "planos": [
+    {
+      "id": "visitante",
+      "nome": {
+        "pt": "Visitante",
+        "en": "Visitor"
+      },
+      "ordem": 1
+    },
+    {
+      "id": "membro",
+      "nome": {
+        "pt": "Membro",
+        "en": "Member"
+      },
+      "ordem": 2
+    },
+    {
+      "id": "premium",
+      "nome": {
+        "pt": "Premium",
+        "en": "Premium"
+      },
+      "ordem": 3
+    },
+    {
+      "id": "familia",
+      "nome": {
+        "pt": "Família",
+        "en": "Family"
+      },
+      "ordem": 4
+    },
+    {
+      "id": "profissional",
+      "nome": {
+        "pt": "Profissional",
+        "en": "Professional"
+      },
+      "ordem": 5
+    }
+  ],
   "servicos": [
     {
       "id": "ia",
@@ -14,7 +56,10 @@
       "planos": [
         "*"
       ],
-      "nivel": "visitante"
+      "nivel": "visitante",
+      "visivel": "bloqueado",
+      "degustacao": null,
+      "mensagem": null
     },
     {
       "id": "ocr",
@@ -26,7 +71,10 @@
       "planos": [
         "*"
       ],
-      "nivel": "visitante"
+      "nivel": "visitante",
+      "visivel": "bloqueado",
+      "degustacao": null,
+      "mensagem": null
     },
     {
       "id": "nuvem",
@@ -38,7 +86,10 @@
       "planos": [
         "*"
       ],
-      "nivel": "visitante"
+      "nivel": "visitante",
+      "visivel": "bloqueado",
+      "degustacao": null,
+      "mensagem": null
     },
     {
       "id": "voz",
@@ -50,7 +101,10 @@
       "planos": [
         "*"
       ],
-      "nivel": "visitante"
+      "nivel": "visitante",
+      "visivel": "bloqueado",
+      "degustacao": null,
+      "mensagem": null
     },
     {
       "id": "notificacoes",
@@ -62,7 +116,10 @@
       "planos": [
         "*"
       ],
-      "nivel": "visitante"
+      "nivel": "visitante",
+      "visivel": "bloqueado",
+      "degustacao": null,
+      "mensagem": null
     },
     {
       "id": "afinador",
@@ -74,7 +131,10 @@
       "planos": [
         "*"
       ],
-      "nivel": "visitante"
+      "nivel": "visitante",
+      "visivel": "bloqueado",
+      "degustacao": null,
+      "mensagem": null
     },
     {
       "id": "importar-cifra",
@@ -86,7 +146,10 @@
       "planos": [
         "*"
       ],
-      "nivel": "visitante"
+      "nivel": "visitante",
+      "visivel": "bloqueado",
+      "degustacao": null,
+      "mensagem": null
     }
   ]
 }
