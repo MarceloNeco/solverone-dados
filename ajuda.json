@@ -1,6 +1,44 @@
 {
   "formato": 1,
-  "geradoEm": "2026-09-25T12:58:16.827Z",
-  "geradoPor": "RootifyONE 0.1.2",
-  "artigos": []
+  "geradoEm": "2026-10-10T01:38:26.274Z",
+  "geradoPor": "RootifyONE 0.11.0",
+  "artigos": [
+    {
+      "id": "kb-f13bffcdeb155bbe",
+      "app": "*",
+      "categoria": "conta",
+      "titulo": {
+        "pt": "Como entrar com a digital",
+        "en": "How to sign in with your fingerprint"
+      },
+      "texto": {
+        "pt": "Abra Configurações ⚙️, toque em Conta e depois em \"Usar a digital\". O aparelho vai pedir a digital uma vez para registrar.",
+        "en": "Open Settings ⚙️, tap Account and then \"Use fingerprint\". The device will ask for your fingerprint once to register it."
+      },
+      "palavras": [
+        "digital",
+        "biometria",
+        "fingerprint"
+      ],
+      "atualizadoEm": "2026-09-27T02:47:31.368Z"
+    },
+    {
+      "id": "kb-0894eb11405c98fa",
+      "app": "*",
+      "categoria": "duvida",
+      "titulo": {
+        "pt": "O app funciona sem internet?",
+        "en": "Does the app work offline?"
+      },
+      "texto": {
+        "pt": "Sim. Depois da primeira visita, o app abre sem internet. O que você registrar fica guardado e sincroniza quando voltar a conexão.",
+        "en": "Yes. After the first visit the app opens offline. What you record is kept and syncs when the connection returns."
+      },
+      "palavras": [
+        "offline",
+        "sem internet"
+      ],
+      "atualizadoEm": "2026-09-27T02:47:31.368Z"
+    }
+  ]
 }
