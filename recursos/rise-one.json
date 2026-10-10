@@ -1,0 +1,44 @@
+{
+  "formato": 1,
+  "geradoEm": "2026-10-10T01:38:26.274Z",
+  "geradoPor": "RootifyONE 0.11.0",
+  "app": "rise-one",
+  "recursos": {
+    "videos-youtube": {
+      "ligado": true,
+      "desde": "",
+      "nome": {
+        "pt": "Vídeos do YouTube na ficha do aparelho",
+        "en": "YouTube videos on the equipment sheet"
+      }
+    },
+    "fotos-centrais": {
+      "ligado": true,
+      "desde": "",
+      "nome": {
+        "pt": "Fotos dos aparelhos vindas do RootifyONE",
+        "en": "Equipment photos from RootifyONE"
+      }
+    },
+    "espelho": {
+      "ligado": true,
+      "desde": "",
+      "nome": {
+        "pt": "Espelho com câmera (postura)",
+        "en": "Camera mirror (posture)"
+      }
+    },
+    "modo-tv": {
+      "ligado": true,
+      "desde": "",
+      "nome": {
+        "pt": "Modo TV",
+        "en": "TV mode"
+      }
+    }
+  },
+  "comportamentos": {
+    "descanso.padraoSeg": 60,
+    "videos.maxPorAparelho": 3
+  }
+}
