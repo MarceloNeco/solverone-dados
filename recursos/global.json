@@ -1,0 +1,69 @@
+{
+  "formato": 1,
+  "geradoEm": "2026-10-10T01:38:26.274Z",
+  "geradoPor": "RootifyONE 0.11.0",
+  "app": "*",
+  "recursos": {
+    "assistone": {
+      "ligado": false,
+      "desde": "",
+      "nome": {
+        "pt": "AssistONE (assistente)",
+        "en": "AssistONE (assistant)"
+      }
+    },
+    "anuncios": {
+      "ligado": true,
+      "desde": "",
+      "nome": {
+        "pt": "Anúncios (faixa e pop-up)",
+        "en": "Ads (strip and pop-up)"
+      }
+    },
+    "ia": {
+      "ligado": true,
+      "desde": "",
+      "nome": {
+        "pt": "Perguntar à IA",
+        "en": "Ask the AI"
+      }
+    },
+    "voz": {
+      "ligado": true,
+      "desde": "",
+      "nome": {
+        "pt": "Leitura em voz alta",
+        "en": "Read aloud"
+      }
+    },
+    "ocr": {
+      "ligado": true,
+      "desde": "",
+      "nome": {
+        "pt": "Ler texto de foto (OCR)",
+        "en": "Read text from photo (OCR)"
+      }
+    },
+    "offline": {
+      "ligado": true,
+      "desde": "",
+      "nome": {
+        "pt": "Usar sem internet e atalho na tela inicial",
+        "en": "Use offline and home-screen shortcut"
+      }
+    },
+    "telemetria": {
+      "ligado": false,
+      "desde": "",
+      "nome": {
+        "pt": "Estatísticas de uso (com consentimento)",
+        "en": "Usage statistics (with consent)"
+      }
+    }
+  },
+  "comportamentos": {
+    "assistone.dicas": true,
+    "contato.email": "contato@solverone.com.br",
+    "suporte.email": "suporte@solverone.com.br"
+  }
+}
