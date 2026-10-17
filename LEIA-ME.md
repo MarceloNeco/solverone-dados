@@ -1,9 +1,8 @@
 # solverone-dados
 
-Arquivos master da plataforma SolverONE, publicados pelo RootifyONE.
-Não edite à mão: mude no RootifyONE e publique de novo.
+Arquivos master da plataforma SolverONE, publicados pelo RootifyONE (o admin da SolverONE).
+Não edite à mão: mude no RootifyONE e publique de novo. Cada publicação nova substitui a anterior.
 
-| conteudo/<app>/<tipo>.json | textos, fotos e vídeos do que o app mostra (ex.: aparelhos do RiseONE); fotos em conteudo/<app>/fotos/ |
 | Arquivo | O que é |
 |---|---|
 | apps.json | catálogo dos apps e versão mínima de cada um |
@@ -15,6 +14,7 @@ Não edite à mão: mude no RootifyONE e publique de novo.
 | ajuda.json | artigos de ajuda do Assist ONE |
 | recursos/<app>.json | recursos ligados/desligados (feature flags) e comportamentos do app; recursos/global.json vale para todos |
 | conteudo/<app>.json | conteúdo editável do app (coleções: textos PT/EN, fotos, vídeos do YouTube, links) |
+| conteudo/<app>/<tipo>.json | textos, fotos e vídeos do que o app mostra (ex.: aparelhos do RiseONE); fotos em conteudo/<app>/fotos/ |
 | conteudo/<app>/*.jpg | fotos enviadas pelo RootifyONE |
 | versoes/<app>.json | o que cada versão de cada app trouxe |
 
