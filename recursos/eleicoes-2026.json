@@ -1,11 +1,11 @@
 {
   "formato": 1,
-  "geradoEm": "2026-10-18T02:39:21.242Z",
-  "geradoPor": "RootifyONE 0.18.2",
+  "geradoEm": "2026-10-18T04:32:17.455Z",
+  "geradoPor": "RootifyONE 0.18.3",
   "app": "eleicoes-2026",
   "recursos": {
     "colinha": {
-      "ligado": false,
+      "ligado": true,
       "desde": "",
       "nome": {
         "pt": "Colinha da eleição",
