@@ -157,6 +157,23 @@
       "interno": false
     },
     {
+      "id": "guiaxpert",
+      "nome": {
+        "pt": "GuiaXpert — Guia de Viagem",
+        "en": "GuiaXpert — Travel Guide"
+      },
+      "url": "https://solverone.com.br/guiaxpert/",
+      "estado": "alpha",
+      "versaoMinima": "",
+      "cor": "#1e5b48",
+      "glifo": "🧳",
+      "descricao": {
+        "pt": "Roteiros sob medida para a família, com várias opções, favoritos, lugares, mapa, clima e reservas guardadas com segurança. Funciona sem internet.",
+        "en": "Family itineraries made to measure, with several options, favourites, places, map, weather and safely stored bookings. Works offline."
+      },
+      "interno": false
+    },
+    {
       "id": "petlover",
       "nome": {
         "pt": "PetLover",

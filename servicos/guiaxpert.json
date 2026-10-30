@@ -1,0 +1,141 @@
+{
+  "formato": 2,
+  "geradoEm": "2026-10-30T00:00:00.000Z",
+  "geradoPor": "Claude (a confirmar no RootifyONE)",
+  "app": "guiaxpert",
+  "aConfirmar": true,
+  "planos": [
+    {
+      "id": "visitante",
+      "nome": {
+        "pt": "Visitante",
+        "en": "Visitor"
+      },
+      "ordem": 1
+    },
+    {
+      "id": "membro",
+      "nome": {
+        "pt": "Membro",
+        "en": "Member"
+      },
+      "ordem": 2
+    },
+    {
+      "id": "premium",
+      "nome": {
+        "pt": "Premium",
+        "en": "Premium"
+      },
+      "ordem": 3
+    },
+    {
+      "id": "familia",
+      "nome": {
+        "pt": "Família",
+        "en": "Family"
+      },
+      "ordem": 4
+    },
+    {
+      "id": "profissional",
+      "nome": {
+        "pt": "Profissional",
+        "en": "Professional"
+      },
+      "ordem": 5
+    }
+  ],
+  "servicos": [
+    {
+      "id": "roteiros",
+      "nome": {
+        "pt": "Roteiros e favoritos",
+        "en": "Itineraries and favourites"
+      },
+      "descricao": null,
+      "planos": [
+        "*"
+      ],
+      "nivel": "visitante",
+      "visivel": "bloqueado",
+      "degustacao": null,
+      "mensagem": null
+    },
+    {
+      "id": "pacotes",
+      "nome": {
+        "pt": "Pacotes de cidade",
+        "en": "City packs"
+      },
+      "descricao": null,
+      "planos": [
+        "*"
+      ],
+      "nivel": "visitante",
+      "visivel": "bloqueado",
+      "degustacao": null,
+      "mensagem": null
+    },
+    {
+      "id": "lugares",
+      "nome": {
+        "pt": "Lugares e busca no OpenStreetMap",
+        "en": "Places and OpenStreetMap search"
+      },
+      "descricao": null,
+      "planos": [
+        "*"
+      ],
+      "nivel": "visitante",
+      "visivel": "bloqueado",
+      "degustacao": null,
+      "mensagem": null
+    },
+    {
+      "id": "clima",
+      "nome": {
+        "pt": "Previsão do tempo",
+        "en": "Weather forecast"
+      },
+      "descricao": null,
+      "planos": [
+        "*"
+      ],
+      "nivel": "visitante",
+      "visivel": "bloqueado",
+      "degustacao": null,
+      "mensagem": null
+    },
+    {
+      "id": "reservas",
+      "nome": {
+        "pt": "Reservas guardadas com PIN",
+        "en": "PIN-protected bookings"
+      },
+      "descricao": null,
+      "planos": [
+        "*"
+      ],
+      "nivel": "visitante",
+      "visivel": "bloqueado",
+      "degustacao": null,
+      "mensagem": null
+    },
+    {
+      "id": "ia",
+      "nome": {
+        "pt": "Roteiro com IA (chave da pessoa)",
+        "en": "AI itinerary (own key)"
+      },
+      "descricao": null,
+      "planos": [
+        "*"
+      ],
+      "nivel": "visitante",
+      "visivel": "bloqueado",
+      "degustacao": null,
+      "mensagem": null
+    }
+  ]
+}
