@@ -1,7 +1,7 @@
 {
   "formato": 1,
-  "geradoEm": "2026-10-10T02:22:51.435Z",
-  "geradoPor": "RootifyONE 0.12.0",
+  "geradoEm": "2026-10-31T05:48:39.052Z",
+  "geradoPor": "RootifyONE 0.18.5",
   "apps": [
     {
       "id": "portal",
@@ -108,17 +108,17 @@
     {
       "id": "eleicoes-2026",
       "nome": {
-        "pt": "Eleições 2026",
-        "en": "2026 Elections"
+        "pt": "RadarONE",
+        "en": "RadarONE"
       },
-      "url": "https://solverone.com.br/planos-candidatos-2026/",
+      "url": "https://solverone.com.br/radar-one/",
       "estado": "beta",
       "versaoMinima": "",
       "cor": "#a4c4a6",
       "glifo": "🗳️",
       "descricao": {
-        "pt": "Infográficos dos planos de governo",
-        "en": "Government plan infographics"
+        "pt": "Acompanhamento político: indicadores, mandatos e eleições",
+        "en": "Political monitoring: indicators, terms and elections"
       },
       "interno": false
     },
@@ -153,23 +153,6 @@
       "descricao": {
         "pt": "Cifras, acordes e afinador",
         "en": "Chords, chord charts and tuner"
-      },
-      "interno": false
-    },
-    {
-      "id": "guiaxpert",
-      "nome": {
-        "pt": "GuiaXpert — Guia de Viagem",
-        "en": "GuiaXpert — Travel Guide"
-      },
-      "url": "https://solverone.com.br/guiaxpert/",
-      "estado": "alpha",
-      "versaoMinima": "",
-      "cor": "#1e5b48",
-      "glifo": "🧳",
-      "descricao": {
-        "pt": "Roteiros sob medida para a família, com várias opções, favoritos, lugares, mapa, clima e reservas guardadas com segurança. Funciona sem internet.",
-        "en": "Family itineraries made to measure, with several options, favourites, places, map, weather and safely stored bookings. Works offline."
       },
       "interno": false
     },
