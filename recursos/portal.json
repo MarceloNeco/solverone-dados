@@ -1,11 +1,11 @@
 {
   "formato": 1,
-  "geradoEm": "2026-11-13T03:59:14.192Z",
+  "geradoEm": "2026-11-13T04:01:58.894Z",
   "geradoPor": "RootifyONE 0.18.28",
   "app": "portal",
   "recursos": {
     "portal.toptal-badge": {
-      "ligado": false,
+      "ligado": true,
       "desde": "",
       "nome": {
         "pt": "Selo Toptal (Top 3% Talent) no rodapé",
