@@ -1,0 +1,107 @@
+# Manter os bancos acordados (cópia de segurança)
+# Cópia de segurança do robô que mora no rootify-one; os dois rodam de propósito.
+# O Supabase grátis pausa o projeto que fica sem uso. A regra oficial pede "algumas requisições ao
+# banco por dia" (https://supabase.com/docs/guides/platform/free-project-pausing). Este robô dá um
+# sinal 2 vezes por dia em cada banco da lista abaixo. Só anota a hora numa linha; não lê nem muda dado de ninguém.
+# - A lista dos bancos está escrita aqui dentro (repositório público: minutos ilimitados).
+#   Para incluir um banco novo, acrescente mais um item em "bancos" (nome, url, chave pública, caminho e corpo).
+# - Só chave PÚBLICA (sb_publishable_...) é aceita; chave secreta nunca entra aqui.
+# - Falhou em algum banco = execução vermelha + e-mail do GitHub: religar o projeto no painel do Supabase.
+name: Manter os bancos acordados
+
+on:
+  schedule:
+    - cron: '37 3,15 * * *'   # 2x por dia: 00h37 e 12h37 em Brasília (03h37 e 15h37 UTC)
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: manter-bancos-acordados
+  cancel-in-progress: false
+
+jobs:
+  sinal:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Dar sinal a cada banco
+        env:
+          LISTA_DE_BANCOS: |
+            {
+              "bancos": [
+                {
+                  "nome": "solverone-app",
+                  "url": "https://qvdvkqydhnadhewcidia.supabase.co",
+                  "chave": "sb_publishable_oRJmeUwlBbOP_HoOXf0xLw_4O8v43EA",
+                  "sinal": {
+                    "caminho": "/rest/v1/rpc/sol_dar_pulso",
+                    "corpo": {
+                      "p_origem": "agendado"
+                    }
+                  }
+                },
+                {
+                  "nome": "roadmap-one",
+                  "url": "https://fgrikzcazxvmvzvmiafu.supabase.co",
+                  "chave": "sb_publishable_G0rOrr_PgUaprot_gMR5ng_LYGU6y_w",
+                  "sinal": {
+                    "caminho": "/rest/v1/rpc/road_dar_pulso",
+                    "corpo": {
+                      "p_origem": "agendado"
+                    }
+                  }
+                }
+              ]
+            }
+        run: |
+          ARQ=lista.json
+          printf '%s' "$LISTA_DE_BANCOS" > "$ARQ"
+          set -u
+          FALHOU=""
+          {
+            echo "### Manter os bancos acordados"
+            echo ""
+            echo "| Banco | HTTP | Resposta |"
+            echo "|---|---|---|"
+          } >> "${GITHUB_STEP_SUMMARY:-/dev/null}"
+          TOTAL=$(jq '.bancos | length' "$ARQ")
+          for i in $(seq 0 $((TOTAL - 1))); do
+            NOME=$(jq -r ".bancos[$i].nome" "$ARQ")
+            URL=$(jq -r ".bancos[$i].url" "$ARQ")
+            CHAVE=$(jq -r ".bancos[$i].chave" "$ARQ")
+            CAMINHO=$(jq -r ".bancos[$i].sinal.caminho" "$ARQ")
+            CORPO=$(jq -c ".bancos[$i].sinal.corpo" "$ARQ")
+            case "$CHAVE" in
+              sb_publishable_*) ;;
+              *) echo "::error::Banco $NOME: só a chave pública (sb_publishable_...) é aceita."
+                 echo "| $NOME | - | chave recusada |" >> "${GITHUB_STEP_SUMMARY:-/dev/null}"
+                 FALHOU="$FALHOU $NOME"; continue;;
+            esac
+            case "$URL" in https://*.supabase.co) ;; *) echo "::error::Banco $NOME: endereço inválido."
+                 echo "| $NOME | - | endereço inválido |" >> "${GITHUB_STEP_SUMMARY:-/dev/null}"
+                 FALHOU="$FALHOU $NOME"; continue;; esac
+            CODIGO=000
+            for tentativa in 1 2 3; do
+              CODIGO=$(curl -sS -o resposta.json -w '%{http_code}' --max-time 30 \
+                -X POST "$URL$CAMINHO" \
+                -H "apikey: $CHAVE" -H "Content-Type: application/json" \
+                -d "$CORPO" || echo 000)
+              if [ "$CODIGO" = "200" ]; then break; fi
+              echo "$NOME, tentativa $tentativa: HTTP $CODIGO $(head -c 200 resposta.json 2>/dev/null || true)"
+              if [ "$tentativa" != "3" ]; then sleep "${ESPERA:-20}"; fi
+            done
+            RESUMO=$(head -c 120 resposta.json 2>/dev/null | tr -d '\n|' || true)
+            echo "| $NOME | $CODIGO | $RESUMO |" >> "${GITHUB_STEP_SUMMARY:-/dev/null}"
+            if [ "$CODIGO" = "200" ]; then
+              echo "Sinal dado em $NOME: $RESUMO"
+            else
+              FALHOU="$FALHOU $NOME"
+            fi
+          done
+          if [ -n "$FALHOU" ]; then
+            echo "::error::Sem resposta de:$FALHOU. Se o projeto estiver pausado, religue em supabase.com → projeto → Restore project."
+            exit 1
+          fi
+
