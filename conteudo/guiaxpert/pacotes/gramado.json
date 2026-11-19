@@ -11,7 +11,7 @@
   "lat": -29.3789,
   "lng": -50.8744
  },
- "atualizadoEm": "2026-11-12",
+ "atualizadoEm": "2026-11-19",
  "fonte": "Pesquisa GuiaXpert (blogs, guias e sites oficiais, out/2026)",
  "aviso": {
   "pt": "Horários e preços podem ter mudado. Itens com confiança baixa: confirme antes de ir.",
@@ -2115,6 +2115,25 @@
     "trilha da cascata"
    ],
    "tempo": "vista"
+  },
+  {
+   "id": "o-maquinista",
+   "nome": "O Maquinista",
+   "categoria": "comer",
+   "subcategoria": "restaurante",
+   "descricao": "Restaurante na antiga estação de trem de Canela (Estação Campos de Canella). Conhecido pelo filé à parmegiana servido na mesa (fica em Canela)",
+   "endereco": "Largo Benito Urbani, 77, Estação Campos de Canella, Centro, Canela",
+   "site": null,
+   "telefone": "(54) 98425-3886",
+   "horario": null,
+   "reserva": null,
+   "preco": "R$ 45–79 (Tripadvisor, 2026)",
+   "criancas": null,
+   "confianca": "baixa",
+   "gratis": false,
+   "lat": -29.3644,
+   "lng": -50.81374,
+   "geoFonte": "osm"
   }
  ],
  "roteiros": [
