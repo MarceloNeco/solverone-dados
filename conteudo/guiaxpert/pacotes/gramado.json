@@ -11,7 +11,7 @@
   "lat": -29.3789,
   "lng": -50.8744
  },
- "atualizadoEm": "2026-11-19",
+ "atualizadoEm": "2026-11-20",
  "fonte": "Pesquisa GuiaXpert (blogs, guias e sites oficiais, out/2026)",
  "aviso": {
   "pt": "Horários e preços podem ter mudado. Itens com confiança baixa: confirme antes de ir.",
@@ -790,17 +790,18 @@
    "categoria": "atracao",
    "subcategoria": null,
    "descricao": "Parque infantil com cerca de 50 atrações",
-   "endereco": "Endereço de visitação não confirmado (sede na Rua São Pedro, 663)",
-   "site": null,
+   "endereco": "Rua São Pedro, 663, Centro, Gramado (a ~500 m da Rua Coberta; sem estacionamento próprio)",
+   "site": "https://www.mundocriamigos.com.br/",
    "telefone": null,
    "horario": "Cerca de 10h–17h; dias divergem entre fontes",
    "reserva": "Online",
    "preco": "Adulto R$ 120 em promoção (2024)",
    "criancas": "Ótimo; cerca de 3h",
-   "confianca": "baixa",
+   "confianca": "oficial",
    "gratis": false,
-   "lat": null,
-   "lng": null
+   "lat": -29.37671,
+   "lng": -50.87742,
+   "geoFonte": "endereco"
   },
   {
    "id": "dreamland-museu-de-cera",
